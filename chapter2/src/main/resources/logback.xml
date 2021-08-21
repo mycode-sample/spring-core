@@ -1,0 +1,17 @@
+<configuration>
+  <!-- 默认控制台日志输出，会根据项目完成情况增加其他appender和Logger，以及其他配置 -->
+  <!-- 日志输出格式可以直接在idea中双击shift定位到方法 -->
+  <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>
+        %date{yyyy-DD-MM hh:mm:ss:SSS} %-5level [%thread]
+        %class . %method - line %line
+        %message%n
+      </pattern>
+    </encoder>
+  </appender>
+
+  <root level="INFO">
+    <appender-ref ref="stdout"/>
+  </root>
+</configuration>

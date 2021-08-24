@@ -1,6 +1,9 @@
 package com.sheepfly.designpattern.part2.section3;
 
-import com.sheepfly.designpattern.part2.section2.Computer;
+import com.sheepfly.chapter2.part2.section2.Computer;
+import com.sheepfly.chapter2.part2.section3.ComputerFactory;
+import com.sheepfly.chapter2.part2.section3.LaptopFactory;
+import com.sheepfly.chapter2.part2.section3.PersonComputerFactory;
 import org.junit.Test;
 
 public class FactoryMethodTest {

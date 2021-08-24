@@ -1,5 +1,6 @@
 package com.sheepfly.designpattern.part3.section2;
 
+import com.sheepfly.chapter2.part3.section2.EagerThread;
 import org.junit.Test;
 
 public class EagerThreadTest {

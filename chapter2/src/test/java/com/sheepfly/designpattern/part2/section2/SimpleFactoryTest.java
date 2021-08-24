@@ -1,5 +1,9 @@
 package com.sheepfly.designpattern.part2.section2;
 
+import com.sheepfly.chapter2.part2.section2.Computer;
+import com.sheepfly.chapter2.part2.section2.ComputerFactory;
+import com.sheepfly.chapter2.part2.section2.Laptop;
+import com.sheepfly.chapter2.part2.section2.PersonComputer;
 import org.junit.Test;
 
 public class SimpleFactoryTest {

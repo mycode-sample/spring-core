@@ -8,7 +8,7 @@
   <artifactId>spring-core</artifactId>
   <version>1.0-SNAPSHOT</version>
   <modules>
-    <module>design-pattern</module>
+    <module>chapter2</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -64,6 +64,12 @@
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.23</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.example</groupId>
+      <artifactId>common</artifactId>
+      <version>0.0.2</version>
     </dependency>
   </dependencies>
 

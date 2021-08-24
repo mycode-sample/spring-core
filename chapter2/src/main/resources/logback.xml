@@ -5,7 +5,7 @@
     <encoder>
       <pattern>
         %date{yyyy-DD-MM hh:mm:ss:SSS} %-5level [%thread]
-        %class . %method - line %line
+        %class#%method - line %line
         %message%n
       </pattern>
     </encoder>

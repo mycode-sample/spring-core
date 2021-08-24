@@ -1,6 +1,7 @@
 package com.sheepfly.designpattern.part2.section5;
 
 
+import com.sheepfly.chapter2.part2.section5.ConnectionPool;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

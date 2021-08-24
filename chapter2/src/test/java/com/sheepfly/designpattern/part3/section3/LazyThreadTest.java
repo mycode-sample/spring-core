@@ -1,5 +1,10 @@
 package com.sheepfly.designpattern.part3.section3;
 
+import com.sheepfly.chapter2.part3.section3.BetterLazyThread;
+import com.sheepfly.chapter2.part3.section3.LazyInnerSingleton;
+import com.sheepfly.chapter2.part3.section3.LazyInnerSingleton2;
+import com.sheepfly.chapter2.part3.section3.LazySingleTon;
+import com.sheepfly.chapter2.part3.section3.LazyThread;
 import org.junit.Test;
 
 import java.io.FileInputStream;

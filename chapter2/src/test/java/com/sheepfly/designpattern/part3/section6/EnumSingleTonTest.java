@@ -1,5 +1,6 @@
 package com.sheepfly.designpattern.part3.section6;
 
+import com.sheepfly.chapter2.part3.section6.EnumSingleTon;
 import org.junit.Test;
 
 import java.io.FileInputStream;

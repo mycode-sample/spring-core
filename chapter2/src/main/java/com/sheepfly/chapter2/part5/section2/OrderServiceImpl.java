@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 public class OrderServiceImpl implements OrderService {
     private static final Logger log = LoggerFactory.getLogger(OrderServiceImpl.class);
 
-    private OrderDao orderDao;
+    private OrderDao orderDao = new OrderDao();
 
     @Override
     public int createOrder(Order order) {

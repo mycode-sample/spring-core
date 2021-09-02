@@ -5,13 +5,23 @@ import org.example.beans.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Service {
+public class Service implements SuperService {
     private static final Logger log = LoggerFactory.getLogger(Service.class);
 
     private User user;
 
     private Company company;
 
+    public Service() {
+        User user = new User();
+        user.setName("张三");
+        Company company = new Company();
+        company.setName("张三的公司");
+        this.setUser(user);
+        this.setCompany(company);
+    }
+
+    @Override
     public void createCompany() {
         log.info("开始创建公司，创始人:" + user.getName());
         log.info("正在创建公司");

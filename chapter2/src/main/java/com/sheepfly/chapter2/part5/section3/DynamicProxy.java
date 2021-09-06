@@ -3,8 +3,6 @@ package com.sheepfly.chapter2.part5.section3;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.lang.reflect.InvocationHandler;
-
 public class DynamicProxy {
     private static final Logger log = LoggerFactory.getLogger(DynamicProxy.class);
 

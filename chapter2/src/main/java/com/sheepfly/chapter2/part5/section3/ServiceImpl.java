@@ -14,4 +14,10 @@ public class ServiceImpl implements Service{
         log.info("张三创业完成");
         log.info("张三公司成立");
     }
+
+    @Override
+    public void makeMoney() {
+        log.info("开始赚钱");
+        log.info("赚钱完成");
+    }
 }

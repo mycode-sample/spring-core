@@ -1,5 +1,5 @@
 package com.sheepfly.chapter2.section7.part2;
 
-public interface PromotionStrtegy {
+public interface PromotionStrategy {
     void doPromotion();
 }

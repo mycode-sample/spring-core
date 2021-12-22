@@ -5,11 +5,31 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class Shop {
     public static void main(String[] args) {
-        PromotionStrtegy ps1 = new CouponStrategy();
-        PromotionStrtegy ps2 = new GroupBuyStrategy();
-        PromotionScheme scheme  = new PromotionScheme(ps1);
-        PromotionScheme scheme2  = new PromotionScheme(ps2);
-        scheme.promote();
-        scheme2.promote();
+        PromotionScheme scheme;
+        if (args.length == 0) {
+            log.warn("不使用优惠");
+        } else {
+
+            String strategy = args[0];
+            switch (strategy) {
+                case "cashBack": {
+                    scheme = new PromotionScheme(new CashBackStrategy());
+                    break;
+                }
+                case "coupon": {
+                    scheme = new PromotionScheme(new CouponStrategy());
+                    break;
+                }
+                case "groupBuy": {
+                    scheme = new PromotionScheme(new GroupBuyStrategy());
+                    break;
+                }
+                default: {
+                    log.warn("优惠无效");
+                    scheme = new PromotionScheme(new NoStrategy());
+                }
+            }
+            scheme.promote();
+        }
     }
 }
